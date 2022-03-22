@@ -13,7 +13,7 @@ class Car:
 
     def __repr__(self):
         cars_table = PrettyTable()
-        cars_table.field_names = ["Id", "Name", "Year", "Buy price", "Sell price"]
+        cars_table.field_names = ["Id", "Name", "Buy price", "Sell price", "Year"]
         cars_table.add_row([1, self.name, self.buy_price, self.sell_price, self.year])
         return str(cars_table)
 
